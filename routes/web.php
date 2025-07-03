@@ -6,9 +6,8 @@ use Illuminate\Http\Request;
 
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
+    return view('home');
+})->name('home');
 
 Route::get('/register', function () {
     return view('auth.register-page');

@@ -2,13 +2,11 @@
 
 @section('content')
 
-<div style="display: flex; justify-content: center; padding-top: 4rem;">
-    <div style="width: 400px;">
-        <h2 style="text-align: center; margin-bottom: 2rem;">Acessar sua Conta</h2>
-
+{{-- Container principal que centraliza tudo na tela --}}
+<div class="flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-md">
         {{-- Carrega nosso componente de login do Livewire --}}
         <livewire:auth.login />
-
     </div>
 </div>
 

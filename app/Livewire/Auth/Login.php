@@ -36,7 +36,7 @@ class Login extends Component
             request()->session()->regenerate();
 
             // Redireciona o usuário para o painel após o login.
-            return redirect()->intended('/dashboard');
+            return redirect()->route('home');
         }
 
         // Se o login falhar, adiciona um erro ao campo 'email'.
